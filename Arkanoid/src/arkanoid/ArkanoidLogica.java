@@ -38,7 +38,7 @@ class ArkanoidLogica extends JPanel {
 
     private HiloJuego hilodeJuego;
 
-    public ArkanoidUTNLogica(int width, int height, Player player, Ball ball, PowerUps pw, ArrayList<Block> blocks, long UltimaActualizacion, HiloJuego hilodeJuego) {
+    public ArkanoidLogica(int width, int height, Player player, Ball ball, PowerUps pw, ArrayList<Block> blocks, long UltimaActualizacion, HiloJuego hilodeJuego) {
         this.width = width;
         this.height = height;
         this.player = player;
@@ -308,10 +308,10 @@ class ArkanoidLogica extends JPanel {
         this.accessibleContext = accessibleContext;
     }
 
-    public ArkanoidUTNLogica() {
+    public ArkanoidLogica() {
     }
 
-    public ArkanoidUTNLogica(int width, int height) {
+    public ArkanoidLogica(int width, int height) {
         this.width = width;
         this.height = height;
 
