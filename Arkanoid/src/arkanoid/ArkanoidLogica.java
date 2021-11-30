@@ -30,7 +30,7 @@ class ArkanoidLogica extends JPanel {
     private PowerUps pw;
     public boolean isRunning = false, isPaused = false;
     private int nivel = 1;
-
+    
     private Color[] filaColores = new Color[]{new Color(252, 25, 125, 252), new Color(152, 162, 224, 120).darker(), new Color(35, 152, 120).darker(), new Color(46, 134, 193).darker(), new Color(146, 134, 203), Color.green.darker()};
     private ArrayList<Block> blocks;
 
@@ -532,6 +532,7 @@ class ArkanoidLogica extends JPanel {
         g.setColor(new Color(236, 240, 241));
         g.fillRect(0, 0, getWidth(), getHeight());
         ball.pintarPuntos(g);
+        ball.life(g);
         player.renderPlayer(g);
         ball.renderBALL(g);
         ball.life(g);
@@ -551,7 +552,7 @@ class ArkanoidLogica extends JPanel {
             msg = "(Espacio) para empezar el juego \n ";
             g.drawString("\n (P) Pausa \n (V) Pasa Niveles \n", 2, 300);
         } else if (isPaused) {
-            msg = "Juego en Pausa";
+            msg = ("Juego en Pausa \n");
         }
 
         FontMetrics fm = g.getFontMetrics();
