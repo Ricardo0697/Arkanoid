@@ -16,7 +16,7 @@ import java.awt.Rectangle;
  */
 public class Player {
 
-    private ArkanoidUTNLogica game;
+    private ArkanoidLogica game;
     private int height = 10;
     private int width = 100;
     Point position = new Point(0, 0);
@@ -26,12 +26,12 @@ public class Player {
     public Player() {
     }
 
-    public Player(ArkanoidUTNLogica game, int mover) {
+    public Player(ArkanoidLogica game, int mover) {
         this.game = game;
         this.mover = mover;
     }
 
-    public Player(ArkanoidUTNLogica game) {
+    public Player(ArkanoidLogica game) {
         this.game = game;
         position = new Point(0, game.getHeight() / 2 - height - 20);
     }
@@ -120,11 +120,11 @@ public class Player {
 
     }
 
-    public ArkanoidUTNLogica getGame() {
+    public ArkanoidLogica getGame() {
         return game;
     }
 
-    public void setGame(ArkanoidUTNLogica game) {
+    public void setGame(ArkanoidLogica game) {
         this.game = game;
     }
 
