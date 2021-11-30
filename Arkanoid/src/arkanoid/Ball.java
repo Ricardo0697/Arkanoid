@@ -23,7 +23,7 @@ public class Ball {
      * cantidades de bolas los puntos la inicializacion del radio de la bola la
      * inicializacion de la logica extra que es un powerup vida extra
      */
-    private ArkanoidUTNLogica game;
+    private ArkanoidLogica game;
     private int radios = 10;
 
     private Point Posicion = new Point(0, 0);
@@ -35,16 +35,16 @@ public class Ball {
     private int extra = 1000;
     private int vidaEXTRA = 3;
 
-    public Ball(ArkanoidUTNLogica game, PowerUps pw) {
+    public Ball(ArkanoidLogica game, PowerUps pw) {
         this.game = game;
         this.pw = pw;
     }
 
-    public ArkanoidUTNLogica getGame() {
+    public ArkanoidLogica getGame() {
         return game;
     }
 
-    public void setGame(ArkanoidUTNLogica game) {
+    public void setGame(ArkanoidLogica game) {
         this.game = game;
     }
 
@@ -129,7 +129,7 @@ public class Ball {
      *
      * @param game es el llamado de la logica como parametro
      */
-    public Ball(ArkanoidUTNLogica game) {
+    public Ball(ArkanoidLogica game) {
         this.game = game;
         balls = 3;
     }
