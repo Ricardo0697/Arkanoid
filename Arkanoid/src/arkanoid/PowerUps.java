@@ -44,24 +44,24 @@ public class PowerUps {
     public void Empezar(int comienza) {
 
         switch (comienza) {
-//            case 1:
-//                // BigBall
-//               // ball.renderup(g);
-//                break;
-//            case 1:
-//                //"MORE POINTS"
-//                ball.vidaExtra();
-//                break;
-//            case 2:
-//                //big player
-//                ball.AddPoint();
-//                break;
-//            case 4:
-//                //Vida Completa 
-//                //player.rederup(g);
-//                break;
-//            default:
-//                break;
+            case 1:
+                // BigBall
+               // ball.renderup(g);
+                break;
+            case 2:
+                //"MORE POINTS"
+                ball.vidaExtra(1);
+                break;
+            case 3:
+                //big player
+                ball.AddPoint();
+                break;
+            case 4:
+                //Vida Completa 
+                //player.rederup(g);
+                break;
+            default:
+                break;
         }
 
     }
