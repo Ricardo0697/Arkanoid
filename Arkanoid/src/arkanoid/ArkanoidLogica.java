@@ -473,16 +473,21 @@ class ArkanoidLogica extends JPanel {
      * bloques
      */
     public void OnBlockBroken(Block b) {
-//         for (int i = 0; i < filaColores.length; i++) {
-//             int dureza = 3;
-//             if(filaColores.equals(Color.GRAY)){
-//               dureza = 3;
-//            }if(filaColores.equals(Color.BLUE)){
-//               dureza = 2;
-//            }if(filaColores.equals(Color.PINK)){
-//               dureza = 3;
-//            }
-//        }
+         for (int i = 0; i < filaColores.length; i++) {
+             
+             int dureza = 3;
+             b.dureza = dureza;
+             if(filaColores.equals(Color.GRAY)){
+               dureza = 2;
+               b.dureza = dureza;
+             }if(filaColores.equals(Color.BLUE)){
+               dureza = 1;
+               b.dureza = dureza;
+            }if(filaColores.equals(Color.PINK)){
+               dureza = 5;
+               b.dureza = dureza;
+            }
+        }
     }
 
     /**
