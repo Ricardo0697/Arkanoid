@@ -282,4 +282,12 @@ public class Ball {
         g.fillOval(Posicion.x - radios, Posicion.y - radios, radios * 4, radios * 4);
 
     }
+
+    void AddPoint() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void vidaExtra(int num) {
+        this.setVidaEXTRA(num);
+    }
 }
