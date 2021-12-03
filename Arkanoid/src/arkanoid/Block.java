@@ -20,7 +20,7 @@ public class Block {
     private int width = 70;
     private int height = 30;
     public Color ColorPrincipal = Color.red.darker();
-
+    public int dureza;
     public Block() {
     }
 
@@ -55,7 +55,7 @@ public class Block {
     public void setColorPrincipal(Color ColorPrincipal) {
         this.ColorPrincipal = ColorPrincipal;
     }
-
+    
     /**
      * Calcula Cuando Choca la Pelota En que momento y en que posision
      *
